@@ -6,22 +6,22 @@ First, add plugin to the pom.xml. The code-coverage-1.0-SNAPSHOT.jar should be y
 
 
 <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-          <configuration>
-            <excludes>
-              <exclude>**/BaseTestCase.java</exclude>
-            </excludes>
-            <argLine>-javaagent:/Users/jiangong/Desktop/testing/AutomatedCodeCoverage-master/Project\ Code/CodeCoverage/target/code-coverage-1.0-SNAPSHOT.jar=${project.groupId}</argLine>
-            <properties>
-                <property>
-                    <name>listener</name>
-                    <value>edu.utdallas.JUnitExecutionListener</value>
-                </property>
-            </properties>
-        </configuration>
-      </plugin>
-      
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<configuration>
+<excludes>
+<exclude>**/BaseTestCase.java</exclude>
+</excludes>
+<argLine>-javaagent:/Users/jiangong/Desktop/testing/AutomatedCodeCoverage-master/Project\ Code/CodeCoverage/target/code-coverage-1.0-SNAPSHOT.jar=${project.groupId}</argLine>
+<properties>
+<property>
+<name>listener</name>
+<value>edu.utdallas.JUnitExecutionListener</value>
+</property>
+</properties>
+</configuration>
+</plugin>
+
 
 Second, run the mvn test to get the original hash value.
 
