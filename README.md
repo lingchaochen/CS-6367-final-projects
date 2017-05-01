@@ -2,7 +2,7 @@
 We use common-dbutils-trunk https://github.com/apache/commons-dbutils to do our project.
 We have 5 steps.
 
-First add plugin to the pom.xml. The code-coverage-1.0-SNAPSHOT.jar should be your own path on your own pc.
+First, add plugin to the pom.xml. The code-coverage-1.0-SNAPSHOT.jar should be your own path on your own pc.
 <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
